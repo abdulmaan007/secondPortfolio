@@ -1,0 +1,691 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    outline: none;
+}
+
+:root{
+    --bg-white: #fff  ;
+    --bg-black:  #283d50 ;
+    --bg-dark: #444  ;
+    --bg-prime:  #007bff ;
+    --bg-pink:  pink ;
+    --bg-heading: rgb(80, 90, 100); 
+}
+
+/* header design */
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.4rem 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:white ;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, .7);
+    z-index: 100;
+    
+}
+
+.header h1{
+    font-size: 2rem;
+    color: var(--bg-prime);
+
+}
+
+
+#menu-icon{
+    display: none;
+    font-size: 3rem;
+    color: var(--bg-prime);
+    cursor: pointer;
+
+    
+}
+
+.header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5rem;
+}
+
+.header .navbar a{
+    font-size: 1rem;
+    color: var(--bg-prime);
+}
+
+/* first section design */
+
+section{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.firstSection{
+    height: 80vh;
+    background-image: url(imgs/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    margin-bottom: 2rem;
+    position: relative;
+    
+}
+
+.firstSection .content{
+    padding-left: 9%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+}
+
+.firstSection .content h1{
+    color: var(--bg-white);
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin-bottom: 5rem;
+    margin-bottom: 1rem;
+    width: 70%;
+}
+
+.firstSection .content .btn-container{
+    margin-top: 2rem;
+}
+
+.firstSection .content .btn-container .btn{
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    margin-right: 1rem;
+    border-radius: 2rem;
+    background: transparent;
+    transition: .4s;
+}
+
+.firstSection .content .btn-container .btn:hover{
+    background: var(--bg-prime);
+    border: 1px solid var(--bg-prime);
+}
+
+.firstSection .content-img{
+    width:35%;
+    height: 50%;
+    position: absolute;
+    top: 10rem;
+    right: 3rem;
+    background: url(imgs/header-img.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* second section design */
+
+.secondSection{
+    padding: 3rem 9%;
+    height: auto;
+
+}
+
+.secondSection h1{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+    color: rgb(80, 90, 100);
+    font-size: 2rem;
+    margin-bottom: 4rem;
+   
+}
+
+.firstAbout{
+    display: flex;
+    flex-direction: row;
+}
+
+.secondSection .content{
+    width: 49%;
+}
+
+.secondSection .content p{
+    color: gray;
+    margin-bottom: 2rem;
+}
+
+.secondSection .content .title-container .titles{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.secondSection .content .title-container .titles i{
+    font-size: 1.8rem;
+    border: 2px solid var(--bg-prime);
+    border-radius: 50%;
+    padding: 1rem;
+    color: var(--bg-prime);
+    margin-right: 1rem;
+}
+
+.titles .title h3{
+   color: rgb(80, 90, 100);
+   margin-bottom: .5rem;
+}
+
+.imgCont{
+    width: 50%;
+
+}
+
+.imgCont img{
+    width: 95%;
+    height: 95%;
+}
+
+/* second Section firstabout */
+
+.secondSection .secondAbout{
+    display: flex;
+
+    margin-top: 5rem;
+}
+
+.secondSection .secondAbout .contentSecond-img{
+    width: 49%;
+    
+}
+
+.secondSection .secondAbout .contentSecond-img img{
+    width: 95%;
+    height: 95%;
+}
+
+
+
+.secondSection .secondAbout .content{
+    width: 49%;
+    padding: 1rem;
+}
+
+.secondSection .secondAbout .content h3{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: rgb(80, 90, 100);
+}
+/* thirdabout */
+.secondSection .thirdAbout{
+    display: flex;
+    margin-top: 2.5rem;
+}
+
+.secondSection .thirdAbout .content{
+    width: 49%;
+    padding: 1rem;
+}
+
+.secondSection .thirdAbout .content h3{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--bg-heading);
+}
+
+.secondSection .thirdAbout .contentThird-img{
+    width: 49%;
+}
+
+.secondSection .thirdAbout .contentThird-img img{
+    width: 95%;
+    height: 95%;
+}
+
+/* Third Section Design */
+
+/* first Service */
+
+.thirdSection{
+ height: auto;
+}
+
+.firstServices-container{
+    background: rgb(200, 228, 238);
+    padding: 5.5rem 9% ;
+}
+
+.thirdSection h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+    color: rgb(80, 90, 100);
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+.thirdSection .services-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+
+.thirdSection .services-container .service{
+    box-shadow: 0px 0px 4px rgba(111, 188, 216, 0.8);
+    background: #fff;
+    padding: 2rem 1.5rem 2rem 4rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: .5rem;
+    transition: .4s;
+}
+
+.thirdSection .services-container .service:hover{
+    transform: translateY(-8px);
+}
+
+.thirdSection .services-container .service i{
+    position: absolute;
+    top: 50%;
+    left:0;
+    transform: translate(-40% ,-50%);
+    font-size: 3rem;
+    color:pink ;
+}
+
+.thirdSection .services-container .service .serviceContent h3{
+    color: var(--bg-heading);
+    margin-bottom: 1rem;
+}
+
+.service .serviceContent p{
+    color: gray;
+    word-spacing: 3px;
+}
+
+/* second Service */
+
+.secondServices-container{
+    background: rgb(74, 42, 216);
+    padding: 5.5rem 9% 2rem 5.5rem;
+}
+
+.secondServices-container h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+.secondServices-container .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.secondServices-container .container{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2rem;
+    background: #007bff;
+    padding: 2rem 2rem 3rem 2rem;
+    width: 19rem;
+    height: 24rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.secondServices-container .container i{
+    font-size: 3.5rem;
+}
+
+.secondServices-container .container a{
+    color: white;
+}
+
+.secondServices-container .container a:hover{
+    border-bottom: 1px solid white;
+}
+
+.box-container .container{
+    transition: .3s;
+}
+
+.box-container .container:hover{
+    transform: translateY(-5px);
+}
+
+.secondServices-container .info-container{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0 2rem 15%;
+    
+    width: 70%;
+    text-align: center;
+    
+}
+
+.secondServices-container .info-container .info p{
+    font-size: .5rem;
+}
+
+/* Third Service */
+
+.thirdServices-container{
+    background: #fff;
+    padding: 5.5rem 9% 0 5.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    
+}
+
+.thirdServices-container h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+.thirdServices-container .pf-box{
+    position: relative;
+}
+
+.thirdServices-container .pf-box img{
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    
+}
+
+
+
+.thirdServices-container .pf-box{
+
+    display: grid;
+    grid-template-columns: repeat(3,14rem);
+    gap: 1rem;
+}
+
+.pf-box .box1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.pf-box .box2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.pf-box .box3{
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+.pf-box .box4{
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+
+.pf-box .box5{
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+
+.pf-box .box6{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.pf-box .box7{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.pf-box .box8{
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+.pf-box .box9{
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+
+/* Fourth Section Design */
+.forthSection{
+    padding: 10% 9%;
+    height: auto;
+}
+
+.forthSection h1{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    
+}
+
+.forthSection .img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    position: relative;
+}
+
+.forthSection .img-container img{
+    width: 13rem;
+    border-radius: 50%;
+
+}
+
+
+/* Fifth Section Design */
+
+.fifthSection{
+    background: rgb(200, 228, 238);
+    padding: 10% 9%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.fifthSection h1{
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--bg-heading);
+}
+
+.fifthSection p{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: gray;
+    font-family: sans-serif;
+}
+
+.fifthSection .contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+.fifthSection .contact-container input,
+.fifthSection .contact-container textarea{
+    width: 100%;
+    border: 1.4px solid gray;
+    padding: .8rem;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    background: transparent;
+    font-size: .8rem;
+    
+}
+
+.fifthSection .contact-container textarea{
+    resize: none;
+}
+
+.contact-container .btn{
+    padding: 1rem 2rem;
+    background: #0079fa;
+    color: white;
+    border-radius: 2rem;
+    font-size: .6rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.contact-container .btn:hover{
+    opacity: .8;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+.active{
+    border-bottom: 1px solid orangered;
+}
+
+
+/* Breakage Points */
+
+@media (max-width:1200px){
+    html{
+        font-size: 95%;
+    }
+}
+
+@media (max-width:850px){
+    .header .navbar{
+        gap: 2rem;
+    }
+    .secondSection .content-img{
+        width: 45%;
+    }
+}
+
+
+@media (max-width:768px){
+    .firstSection .content-img{
+        display: none;
+    }
+    .firstSection .content{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width:768px){
+    .firstSection{
+        height: 65vh;
+    }
+    #menu-icon{
+        display: block;
+        font-size: 3rem;
+    }
+    .navbar{
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 100%;
+        bottom: -100vh;
+        width: 50%;
+        padding: 2rem 4%;
+        background: var(--bg-prime);
+        transition: .3s ease;
+    }
+
+    .navbar.active-navbar{
+        left: 50%;
+        transition-delay: .2s;
+    }
+  
+    .header .navbar{
+        gap: 3rem;
+        align-items: start;
+        justify-content: start;
+        padding: 2rem;
+    }
+    .header .navbar a{
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: white;
+        
+    }
+
+
+}
+
+@media (max-width:680px){
+    .thirdServices-container .pf-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+       
+    }
+    .thirdServices-container .pf-box img{
+        width: 80%;
+        
+        margin-left: 10%;
+    }
+}
+
+@media (max-width:600px){
+    .secondSection .secondAbout,
+    .secondSection .thirdAbout{
+        flex-direction: column;
+    }
+    .secondSection .thirdAbout,
+    .firstAbout{
+        flex-direction: column-reverse;
+    }
+    .secondSection .secondAbout .content,
+    .secondSection .secondAbout .contentSecond-img,
+    .secondSection .thirdAbout .contentThird-img,
+    .secondSection .thirdAbout .content,
+    .secondSection .content,
+    .imgCont{
+        width: 100%;
+    }
+    .thirdSection .services-container{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+
+
+
+}
+
+
+
+
